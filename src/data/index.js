@@ -199,7 +199,7 @@ export const PROJECTS = [
       jumlah_unit: "20 Unit (Sisa 8)",
       tipe_unit: "Type 80/65 & 90/65 (2 Lantai)",
       konsep: "Modern Commercial",
-      sertifikat: "SHGB",
+      sertifikat: "SHM",
       serah_terima: "Q2 2025",
     },
     facilities: [
@@ -359,7 +359,7 @@ export const PROJECTS = [
         floor_type: "2-lantai",
       },
     ],
-    maps_url: "hhttps://maps.app.goo.gl/8q2mV2qAdYsdJLx38",
+    maps_url: "https://maps.app.goo.gl/3x6QY2jQuiMT46QU9",
     address: "FQ59+GM6 Blulukan, Kabupaten Karanganyar, Jawa Tengah",
     nearby: [
       "5 mnt ke Stasiun Jurang Mangu",
