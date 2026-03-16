@@ -634,9 +634,9 @@ export const CONTACT_INFO = [
 ];
 
 export const WA_NUMBERS = [
-  { label: "Fuad", number: "6281111111111" },
-  { label: "Miftah", number: "6282222222222" },
-  { label: "Faris", number: "6283333333333" },
+  { label: "Fuad", number: "6287851892312" },
+  { label: "Miftah", number: "6281703439994" },
+  { label: "Faris", number: "6287888701191" },
 ];
 
 // ─── WA CONTACTS ─────────────────────────────────────────────────────────────

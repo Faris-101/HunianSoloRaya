@@ -134,6 +134,19 @@ export default function Booking({ onSubmit }) {
 
           <button
             onClick={() => {
+              const pesan = `Halo, saya ingin info lebih lanjut 🙏
+
+Nama: ${form.nama}
+No HP/WA: ${form.hp}
+Email: ${form.email}
+Proyek: ${form.proyek || "Belum dipilih"}
+Tipe Unit: ${form.unit || "Belum dipilih"}
+Pesan: ${form.pesan || "-"}`;
+
+              window.open(
+                `https://wa.me/6287888701191?text=${encodeURIComponent(pesan)}`,
+                "_blank",
+              );
               onSubmit();
               setForm(INIT);
             }}
