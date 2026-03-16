@@ -34,12 +34,11 @@ export const PROJECTS = [
     type: "Type 80/60, 80/61 & 80/63",
     price: "Mulai 520 Jt",
     span2: true,
-    thumbnail: "/assets/foto-1.PNG",
+    thumbnail: "/assets/ayodya-1.png",
     photos: [
-      "/assets/foto-1.PNG",
-      "/assets/foto-2.PNG",
-      "/assets/foto-3.PNG",
-      "/assets/foto-4.PNG",
+      "/assets/ayodya-1.png",
+      "/assets/ayodya-2.png",
+      "/assets/ayodya-3.png",
     ],
     description:
       "Taman Ayodya 2 hadir sebagai hunian asri di Kartasura yang strategis. Hanya 3 menit dari Jl. Slamet Riyadi, kawasan ini menawarkan kenyamanan dengan fasum taman yang luas dan lingkungan yang tenang.",
@@ -107,13 +106,8 @@ export const PROJECTS = [
     units: "20 Unit Tersedia",
     type: "Type 40/60, 48/60 & 80/63",
     price: "Mulai 320 Jt",
-    thumbnail: "/assets/foto-2.PNG",
-    photos: [
-      "/assets/foto-2.PNG",
-      "/assets/foto-3.PNG",
-      "/assets/foto-4.PNG",
-      "/assets/foto-5.jpeg",
-    ],
+    thumbnail: "/assets/ged8-3.png",
+    photos: ["/assets/ged8-1.png", "/assets/ged8-2.png", "/assets/ged8-3.png"],
     description:
       "Cluster Gedongan 8 hadir dengan harga ekonomis namun tetap mengutamakan kenyamanan penghuni. Fasilitas umum yang lengkap dan lingkungan yang nyaman menjadikan hunian ini pilihan tepat untuk keluarga.",
     specs: {
@@ -186,12 +180,12 @@ export const PROJECTS = [
     units: "8 Unit Tersedia",
     type: "Type 80/65 & 90/65",
     price: "Mulai 540 Jt",
-    thumbnail: "/assets/foto-3.PNG",
+    thumbnail: "/assets/ged7-1.png",
     photos: [
-      "/assets/foto-3.PNG",
-      "/assets/foto-4.PNG",
-      "/assets/foto-5.jpeg",
-      "/assets/foto-6.jpeg",
+      "/assets/ged7-1.png",
+      "/assets/ged7-2.png",
+      "/assets/ged7-3.png",
+      "/assets/ged7-4.png",
     ],
     description:
       "Nusa Square adalah kawasan komersial premium yang dirancang untuk mendukung pertumbuhan bisnis di Depok. Dengan konsep mixed-use modern, Nusa Square menghadirkan ruko dengan desain fasad kontemporer yang menarik.",
@@ -305,8 +299,8 @@ export const PROJECTS = [
   },
   {
     id: 5,
-    slug: "graha-presidency",
-    name: "Graha Presidency",
+    slug: "graha-presiden",
+    name: "Graha Presiden",
     tagline: "Hunian Dekat Masjid & Hotel Lorin",
     location: "Solo, Jawa Tengah",
     status: "indent",
@@ -314,12 +308,11 @@ export const PROJECTS = [
     units: "17 Unit Tersedia",
     type: "Type 100/80 & 90/80",
     price: "Mulai 750 Jt",
-    thumbnail: "/assets/foto-5.jpeg",
+    thumbnail: "/assets/grahapresiden-1.png",
     photos: [
-      "/assets/foto-5.jpeg",
-      "/assets/foto-6.jpeg",
-      "/assets/foto-2.PNG",
-      "/assets/foto-3.PNG",
+      "/assets/grahapresiden-1.png",
+      "/assets/grahapresiden-2.png",
+      "/assets/grahapresiden-3.png",
     ],
     description:
       "Graha Presidency menghadirkan hunian yang tenang dan nyaman di Solo. Dekat dengan masjid, Hotel Lorin, dan kantor Bea Cukai, kawasan ini ideal untuk keluarga yang menginginkan lokasi strategis.",
@@ -441,9 +434,8 @@ export const PROJECTS = [
     thumbnail: "/assets/townhouse.png",
     photos: [
       "/assets/townhouse.png",
-      "https://placehold.co/1200x800/382c20/e8d5b0?text=Palazzo+Foto+2",
-      "https://placehold.co/1200x800/524430/c9a96e?text=Palazzo+Foto+3",
-      "https://placehold.co/1200x800/2a2018/e8d5b0?text=Palazzo+Foto+4",
+      "/assets/townhouse-2.png",
+      "/assets/townhouse-3.png",
     ],
     description:
       "Solo Townhouse 6 menghadirkan hunian mewah minimalis di jantung Kota Solo. Dekat dengan Joglo, Manahan, dan masjid, kawasan eksklusif ini menawarkan gaya hidup modern yang nyaman dan prestisius.",
