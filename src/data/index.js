@@ -438,10 +438,9 @@ export const PROJECTS = [
     units: "3 Unit Tersedia",
     type: "Type 120/93",
     price: "Rp 1,2 Miliar",
-    thumbnail:
-      "https://placehold.co/800x600/453828/c9a96e?text=Palazzo+Karawang",
+    thumbnail: "/assets/townhouse.png",
     photos: [
-      "https://placehold.co/1200x800/453828/c9a96e?text=Palazzo+Foto+1",
+      "/assets/townhouse.png",
       "https://placehold.co/1200x800/382c20/e8d5b0?text=Palazzo+Foto+2",
       "https://placehold.co/1200x800/524430/c9a96e?text=Palazzo+Foto+3",
       "https://placehold.co/1200x800/2a2018/e8d5b0?text=Palazzo+Foto+4",
