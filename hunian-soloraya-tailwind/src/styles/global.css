@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gold: #c9a96e;
+    --gold-light: #e8d5b0;
+    --dark: #1a1814;
+    --cream: #f7f4ef;
+    --gray: #8a8578;
+    --border: rgba(26,24,20,0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "DM Sans", sans-serif; background: #f7f4ef; color: #1a1814; overflow-x: hidden; }
+}
+
+@layer components {
+  /* Section tag dengan garis emas */
+  .section-tag {
+    @apply flex items-center gap-3 text-[0.72rem] tracking-[0.22em] uppercase text-gold mb-4;
+  }
+  .section-tag::before {
+    content: "";
+    @apply block w-8 h-px bg-gold;
+  }
+
+  /* Tombol primary/secondary */
+  .btn-primary {
+    @apply px-8 py-4 bg-dark text-cream text-[0.8rem] tracking-[0.12em] uppercase no-underline transition-all duration-300 hover:bg-gold inline-block;
+  }
+  .btn-secondary {
+    @apply px-8 py-4 bg-transparent text-dark text-[0.8rem] tracking-[0.12em] uppercase no-underline border border-[rgba(26,24,20,0.1)] transition-all duration-300 hover:border-dark inline-block;
+  }
+
+  /* Logo */
+  .logo {
+    @apply font-serif text-[1.6rem] font-medium tracking-[0.05em] text-dark no-underline;
+  }
+  .logo span { @apply text-gold; }
+
+  /* Input & select style */
+  .field-input {
+    @apply w-full px-4 py-[0.9rem] bg-white border border-[rgba(26,24,20,0.1)] font-sans text-[0.9rem] text-dark outline-none transition-colors duration-200 focus:border-gold appearance-none;
+  }
+  .field-label {
+    @apply block text-[0.72rem] tracking-[0.12em] uppercase text-gray mb-2;
+  }
+}
+
+@layer utilities {
+  /* Animasi hero */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fadeUp 0.7s ease backwards; }
+
+  /* Slide up card */
+  @keyframes slideUpCard {
+    from { opacity: 0; transform: translateX(-50%) translateY(30px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+  .animate-slide-up-card { animation: slideUpCard 0.5s cubic-bezier(.25,.46,.45,.94) both; }
+
+  /* Mobile menu */
+  .mobile-menu-closed { max-height: 0; opacity: 0; transform: translateY(-8px); pointer-events: none; }
+  .mobile-menu-open   { max-height: 320px; opacity: 1; transform: translateY(0); pointer-events: all; }
+
+  /* Hamburger spans */
+  .ham-open-1 { transform: translateY(7px) rotate(45deg); }
+  .ham-open-2 { opacity: 0; width: 0; }
+  .ham-open-3 { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Gold line top on hover */
+  .gold-line-top::before {
+    content: ""; @apply absolute top-0 left-0 right-0 h-0.5 bg-gold scale-x-0 transition-transform duration-300;
+  }
+  .gold-line-top:hover::before { @apply scale-x-100; }
+
+  /* Gold line bottom */
+  .gold-line-bottom::after {
+    content: ""; @apply absolute bottom-0 left-0 right-0 h-0.5 bg-gold scale-x-0 transition-transform duration-300;
+  }
+  .gold-line-bottom:hover::after { @apply scale-x-100; }
+
+  /* Overlay gradient project card */
+  .project-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+  }
+
+  /* Mask foto hero utd */
+  .utd-photo-mask {
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.10) 30%, transparent 70%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.10) 30%, transparent 70%);
+  }
+}
