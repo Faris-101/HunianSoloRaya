@@ -161,8 +161,9 @@ export const PROJECTS = [
         floor_type: "2-lantai",
       },
     ],
-    maps_url: "https://maps.google.com",
-    address: "Jl. Verdana Hills Blok A, Sentul City, Bogor, Jawa Barat 16810",
+    maps_url: "https://maps.app.goo.gl/ViMToGTNU15oZwku9",
+    address:
+      "FQF9+3F6, Tanon Lor, Gedongan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173",
     nearby: [
       "10 mnt ke Gerbang Tol Sentul",
       "15 mnt ke Jungleland",
@@ -225,8 +226,9 @@ export const PROJECTS = [
         floor_type: "2-lantai",
       },
     ],
-    maps_url: "https://maps.google.com",
-    address: "Jl. Margonda Raya No.88, Depok, Jawa Barat 16431",
+    maps_url: "https://maps.app.goo.gl/ym2cdMcdnwu9rP9J6",
+    address:
+      "Cluster Gedongan 7 Jl. Gatot Kaca 4 No.5, Pepe, Gedongan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173",
     nearby: [
       "5 mnt ke Stasiun Depok Baru",
       "3 mnt ke Universitas Indonesia",
@@ -467,9 +469,9 @@ export const PROJECTS = [
         floor_type: "2-lantai",
       },
     ],
-    maps_url: "https://maps.google.com",
+    maps_url: "https://maps.app.goo.gl/4ZccpAdBX8seTGpF9",
     address:
-      "Jl. Palazzo Boulevard No.1, Karawang Barat, Karawang, Jawa Barat 41315",
+      "Jl. Singasari Selatan I No.40, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135",
     nearby: [
       "10 mnt ke Tol Jakarta-Cikampek",
       "15 mnt ke Summarecon Karawang",
@@ -548,8 +550,8 @@ export const PROJECTS = [
         floor_type: "2-lantai",
       },
     ],
-    maps_url: "https://maps.google.com",
-    address: "Jl. Greenpark Utama No.5, Bogor Selatan, Bogor, Jawa Barat 16135",
+    maps_url: "https://maps.app.goo.gl/RFGLurd13vpTekw8A",
+    address: "FP8F+CXQ Bolon, Kabupaten Karanganyar, Jawa Tengah",
     nearby: [
       "10 mnt ke Kebun Raya Bogor",
       "15 mnt ke Stasiun Bogor",
