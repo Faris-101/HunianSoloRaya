@@ -90,9 +90,11 @@ export const PROJECTS = [
     maps_url: "https://maps.app.goo.gl/mJowBcwm4mBbHHi18",
     address: "CQJ3+MFX Gumpang, Kabupaten Sukoharjo, Jawa Tengah",
     nearby: [
-      "5 mnt ke BSD City",
-      "10 mnt ke Stasiun Cisauk",
-      "15 mnt ke ICE BSD",
+      "3 mnt ke Jl. Slamet Riyadi Kartasura",
+      "5 mnt ke Kampus UMS Pabelan",
+      "5 mnt ke Transmart Pabelan",
+      "8 mnt ke RS UNS & RS Ortopedi Dr. Soeharso",
+      "10 mnt ke Pintu Tol Colomadu",
     ],
   },
   {
@@ -165,9 +167,11 @@ export const PROJECTS = [
     address:
       "FQF9+3F6, Tanon Lor, Gedongan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173",
     nearby: [
-      "10 mnt ke Gerbang Tol Sentul",
-      "15 mnt ke Jungleland",
-      "20 mnt ke Kota Bogor",
+      "5 mnt ke Pintu Tol Klodran Solo",
+      "8 mnt ke Bandara Adi Soemarmo",
+      "5 mnt ke Hotel Alana Jl. Adi Sucipto",
+      "6 mnt ke RS JIH Solo",
+      "13 mnt ke Stadion Manahan Solo",
     ],
   },
   {
@@ -230,9 +234,11 @@ export const PROJECTS = [
     address:
       "Cluster Gedongan 7 Jl. Gatot Kaca 4 No.5, Pepe, Gedongan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173",
     nearby: [
-      "5 mnt ke Stasiun Depok Baru",
-      "3 mnt ke Universitas Indonesia",
-      "10 mnt ke Margo City Mall",
+      "5 mnt ke Pintu Tol Klodran Solo",
+      "8 mnt ke Bandara Adi Soemarmo",
+      "7 mnt ke Hotel Alana & De Tjolomadoe",
+      "6 mnt ke RS JIH Solo",
+      "11 mnt ke Kampus UMS",
     ],
   },
   {
@@ -294,9 +300,11 @@ export const PROJECTS = [
     maps_url: "https://maps.app.goo.gl/qTz3xqojKSq8Dy7D9",
     address: "FQ6H+C3X Tohudan, Kabupaten Karanganyar, Jawa Tengah",
     nearby: [
-      "5 mnt ke Transyogi",
-      "10 mnt ke Cibubur Junction",
-      "15 mnt ke Tol Jagorawi",
+      "4 mnt ke Hotel Alana Jl. Adi Sucipto",
+      "5 mnt ke Pintu Tol Klodran Solo",
+      "7 mnt ke RS JIH Solo",
+      "10 mnt ke Bandara Adi Soemarmo",
+      "7 mnt ke Stadion Manahan Solo",
     ],
   },
   {
@@ -357,9 +365,11 @@ export const PROJECTS = [
     maps_url: "https://maps.app.goo.gl/3x6QY2jQuiMT46QU9",
     address: "FQ59+GM6 Blulukan, Kabupaten Karanganyar, Jawa Tengah",
     nearby: [
-      "5 mnt ke Stasiun Jurang Mangu",
-      "10 mnt ke IKEA Alam Sutera",
-      "15 mnt ke RS Pondok Indah",
+      "5 mnt ke Hotel Lorin & Lorin Syariah Solo",
+      "6 mnt ke Pintu Tol Colomadu",
+      "7 mnt ke RS JIH Solo",
+      "10 mnt ke Bandara Adi Soemarmo",
+      "12 mnt ke Stadion Manahan Solo",
     ],
   },
   {
@@ -420,7 +430,13 @@ export const PROJECTS = [
     maps_url: "https://maps.app.goo.gl/KcWsAquUtATuLanQA",
     address:
       "FQF9+3F6, Tanon Lor, Gedongan, Kec. Colomadu, Kabupaten Karanganyar, Jawa Tengah 57173",
-    nearby: ["5 mnt ke gerbang Tol", "10 mnt ke Mal", "15 mnt ke "],
+    nearby: [
+      "5 mnt ke Pintu Tol Klodran Solo",
+      "8 mnt ke Bandara Adi Soemarmo",
+      "6 mnt ke RS JIH Solo",
+      "8 mnt ke De Tjolomadoe & Superindo Colomadu",
+      "13 mnt ke Stadion Manahan Solo",
+    ],
   },
   {
     id: 7,
@@ -473,9 +489,11 @@ export const PROJECTS = [
     address:
       "Jl. Singasari Selatan I No.40, Nusukan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57135",
     nearby: [
-      "10 mnt ke Tol Jakarta-Cikampek",
-      "15 mnt ke Summarecon Karawang",
-      "20 mnt ke KIIC",
+      "5 mnt ke Simpang Joglo & Jembatan Merah",
+      "7 mnt ke Stadion Manahan Solo",
+      "7 mnt ke Terminal Tirtonadi",
+      "8 mnt ke Stasiun Solo Balapan",
+      "10 mnt ke RS PKU Muhammadiyah Solo",
     ],
   },
   {
@@ -553,9 +571,11 @@ export const PROJECTS = [
     maps_url: "https://maps.app.goo.gl/RFGLurd13vpTekw8A",
     address: "FP8F+CXQ Bolon, Kabupaten Karanganyar, Jawa Tengah",
     nearby: [
-      "10 mnt ke Kebun Raya Bogor",
-      "15 mnt ke Stasiun Bogor",
-      "20 mnt ke Tol Jagorawi",
+      "5 mnt ke Pintu Tol Klodran Solo",
+      "7 mnt ke Hotel Alana Jl. Adi Sucipto",
+      "8 mnt ke RS JIH Solo",
+      "10 mnt ke Bandara Adi Soemarmo",
+      "12 mnt ke Stadion Manahan Solo",
     ],
   },
 ];
