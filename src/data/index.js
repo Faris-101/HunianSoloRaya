@@ -507,14 +507,8 @@ export const PROJECTS = [
     units: "39 Unit Tersedia",
     type: "Type 36/61, 38/66 & 65/66",
     price: "Mulai 295 Jt",
-    thumbnail:
-      "https://placehold.co/800x600/2a4035/c9a96e?text=Greenpark+Bogor",
-    photos: [
-      "https://placehold.co/1200x800/2a4035/c9a96e?text=Greenpark+Foto+1",
-      "https://placehold.co/1200x800/203328/e8d5b0?text=Greenpark+Foto+2",
-      "https://placehold.co/1200x800/354d40/c9a96e?text=Greenpark+Foto+3",
-      "https://placehold.co/1200x800/182820/e8d5b0?text=Greenpark+Foto+4",
-    ],
+    thumbnail: "/assets/ged8-3.png",
+    photos: ["/assets/ged8-1.png", "/assets/ged8-2.png", "/assets/ged8-3.png"],
     description:
       "Amarta Residence 3 hadir dengan harga ekonomis dan fasilitas taman yang luas di Solo. Hunian ini cocok untuk keluarga yang mencari kenyamanan dengan anggaran terjangkau tanpa mengorbankan kualitas.",
     specs: {
