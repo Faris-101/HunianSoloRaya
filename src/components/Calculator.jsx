@@ -26,15 +26,18 @@ export default function Calculator() {
   }, [skema, harga, dpPersen, tenor, rate, kprJenis]);
 
   function hitung() {
-    const dpNominal = (harga * dpPersen) / 100;
+    // Clamp dp 1–99 untuk kalkulasi, tapi tidak paksa input
+    const dp = Math.max(1, Math.min(99, dpPersen || 1));
+    const dpNominal = (harga * dp) / 100;
     const sisaBayar = harga - dpNominal;
+
     if (skema === "cash-keras" || skema === "cash-bertahap") {
       setResult({
         harga,
         dpNominal,
-        dpPersen,
+        dpPersen: dp,
         sisaBayar,
-        highlightValue: sisaBayar / 12,
+        highlightValue: sisaBayar > 0 ? sisaBayar / 12 : 0,
         highlight:
           skema === "cash-keras" ? "Cicilan / Bulan" : "Angsuran / Bulan",
         keterangan: "Sisa pembayaran dicicil 12 bulan tanpa bunga",
@@ -45,7 +48,7 @@ export default function Calculator() {
       if (kprJenis === "syariah") {
         const marginTotal = sisaBayar * (rate / 100) * tenor;
         const hargaJual = sisaBayar + marginTotal;
-        cicilan = hargaJual / n;
+        cicilan = n > 0 ? hargaJual / n : 0;
         totalBayar = dpNominal + hargaJual;
         totalMargin = marginTotal;
       } else {
@@ -53,14 +56,16 @@ export default function Calculator() {
         cicilan =
           bm > 0
             ? (sisaBayar * bm * Math.pow(1 + bm, n)) / (Math.pow(1 + bm, n) - 1)
-            : sisaBayar / n;
+            : n > 0
+              ? sisaBayar / n
+              : 0;
         totalBayar = dpNominal + cicilan * n;
         totalMargin = cicilan * n - sisaBayar;
       }
       setResult({
         harga,
         dpNominal,
-        dpPersen,
+        dpPersen: dp,
         sisaBayar,
         totalBayar,
         totalMargin,
@@ -74,12 +79,39 @@ export default function Calculator() {
     }
   }
 
-  const dpMin =
-    skema === "cash-keras" ? 80 : skema === "cash-bertahap" ? 40 : 10;
   function handleSkema(key) {
     setSkema(key);
-    setDpPersen(key === "cash-keras" ? 80 : key === "cash-bertahap" ? 40 : 20);
+    // Reset DP ke nilai default tiap skema, tapi user bebas ubah
+    if (key === "cash-keras") setDpPersen(80);
+    else if (key === "cash-bertahap") setDpPersen(40);
+    else setDpPersen(20);
   }
+
+  function handleDp(val) {
+    // Izinkan input bebas 1–99, tanpa paksa clamp saat mengetik
+    const num = parseFloat(val);
+    if (isNaN(num)) {
+      setDpPersen("");
+      return;
+    }
+    if (num > 99) {
+      setDpPersen(99);
+      return;
+    }
+    if (num < 1) {
+      setDpPersen(1);
+      return;
+    }
+    setDpPersen(num);
+  }
+
+  // Hint minimum per skema — hanya informasi, tidak mengunci
+  const dpHint =
+    skema === "cash-keras"
+      ? "Disarankan min. 80%"
+      : skema === "cash-bertahap"
+        ? "Disarankan min. 40%"
+        : "Bebas, min. 1%";
 
   const inputCls =
     "w-full px-4 py-3 bg-white border border-[rgba(26,24,20,0.1)] font-sans text-[0.88rem] text-dark outline-none focus:border-gold transition-colors duration-200 appearance-none";
@@ -174,6 +206,7 @@ export default function Calculator() {
       <div className="flex flex-col gap-8 lg:grid lg:grid-cols-[1.2fr_1fr] lg:gap-20 lg:items-start">
         {/* Form */}
         <div className="flex flex-col gap-5">
+          {/* Harga */}
           <div>
             <label className={labelCls}>Harga Properti (Rp)</label>
             <input
@@ -187,40 +220,24 @@ export default function Calculator() {
             </div>
           </div>
 
+          {/* DP — bebas input */}
           <div>
-            <label className={labelCls}>
-              {skema === "cash-keras"
-                ? "Uang Muka (min. 80%)"
-                : skema === "cash-bertahap"
-                  ? "Uang Muka (min. 40%)"
-                  : "Uang Muka / DP (%)"}
-            </label>
+            <label className={labelCls}>Uang Muka / DP (%)</label>
             <input
               className={inputCls}
               type="number"
               value={dpPersen}
-              min={dpMin}
+              min={1}
               max={99}
-              onChange={(e) =>
-                setDpPersen(
-                  Math.max(
-                    dpMin,
-                    Math.min(99, parseFloat(e.target.value) || 0),
-                  ),
-                )
-              }
+              onChange={(e) => handleDp(e.target.value)}
             />
             <div className="text-[0.72rem] text-gray mt-1">
-              {formatRp((harga * dpPersen) / 100)} ({dpPersen}%)
-              {dpPersen < dpMin && (
-                <span className="text-amber-700 font-medium">
-                  {" "}
-                  ⚠ Minimum {dpMin}%
-                </span>
-              )}
+              {formatRp((harga * (dpPersen || 0)) / 100)} ({dpPersen || 0}%)
+              <span className="ml-2 text-gold/70">{dpHint}</span>
             </div>
           </div>
 
+          {/* KPR options */}
           {skema === "kpr" && (
             <>
               <div>
