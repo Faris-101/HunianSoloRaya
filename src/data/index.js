@@ -650,11 +650,10 @@ export const CONTACT_INFO = [
 ];
 
 export const WA_NUMBERS = [
-  { label: "Fuad", number: "6287851892312" },
-  { label: "Miftah", number: "6281703439994" },
-  { label: "Faris", number: "6287888701191" },
+  { key: "fuad", label: "Fuad", number: "6287851892312" },
+  { key: "miftah", label: "Miftah", number: "6281703439994" },
+  { key: "faris", label: "Faris", number: "6287888701191" },
 ];
-
 // ─── WA CONTACTS ─────────────────────────────────────────────────────────────
 export const WA_CONTACTS = [
   { name: "Agen 1", number: "6281234567891" },

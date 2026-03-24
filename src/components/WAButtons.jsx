@@ -9,10 +9,14 @@ export default function WAButtons({
   const labelColor = theme === "light" ? "text-gray" : "text-white/55";
   const labelHover =
     theme === "light" ? "group-hover:text-dark" : "group-hover:text-white/90";
+  const agent = import.meta.env.VITE_AGENT;
+  const filtered = agent
+    ? WA_NUMBERS.filter((w) => w.key === agent)
+    : WA_NUMBERS;
 
   return (
     <div className="flex items-start gap-5">
-      {WA_NUMBERS.map((wa) => (
+      {filtered.map((wa) => (
         <a
           key={wa.label}
           href={`https://wa.me/${wa.number}?text=${encodeURIComponent(message)}`}

@@ -26,6 +26,11 @@ export default function Booking({ onSubmit }) {
     setForm(INIT);
   }
 
+  const agent = import.meta.env.VITE_AGENT;
+  const filtered = agent
+    ? WA_NUMBERS.filter((w) => w.key === agent)
+    : WA_NUMBERS;
+
   return (
     <section
       id="booking"
@@ -169,7 +174,7 @@ export default function Booking({ onSubmit }) {
               Kirim & Jadwalkan Kunjungan via WhatsApp
             </p>
             <div className="grid grid-cols-3 gap-2">
-              {WA_NUMBERS.map((wa) => (
+              {filtered.map((wa) => (
                 <button
                   key={wa.label}
                   onClick={() => kirimKe(wa)}
