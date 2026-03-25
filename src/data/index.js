@@ -65,7 +65,7 @@ export const PROJECTS = [
         lb: 60,
         beds: 3,
         baths: 2,
-        price: "Mulai Rp 520 Juta",
+        price: "Mulai Rp 550 Juta",
         floor_type: "2-lantai",
       },
       {
@@ -74,7 +74,7 @@ export const PROJECTS = [
         lb: 61,
         beds: 3,
         baths: 2,
-        price: "Mulai Rp 520 Juta",
+        price: "Mulai Rp 550 Juta",
         floor_type: "2-lantai",
       },
       {
@@ -83,7 +83,7 @@ export const PROJECTS = [
         lb: 63,
         beds: 3,
         baths: 2,
-        price: "Mulai Rp 520 Juta",
+        price: "Mulai Rp 550 Juta",
         floor_type: "2-lantai",
       },
     ],
@@ -193,7 +193,7 @@ export const PROJECTS = [
       "/assets/ged7-4.png",
     ],
     description:
-      "Nusa Square adalah kawasan komersial premium yang dirancang untuk mendukung pertumbuhan bisnis di Depok. Dengan konsep mixed-use modern, Nusa Square menghadirkan ruko dengan desain fasad kontemporer yang menarik.",
+      "Cluster Gedongan 7 hadir sebagai hunian nyaman di kawasan strategis dekat Jalan Tol Bandara Adi Soemarmo. Dengan konsep modern dan lingkungan yang asri, kawasan ini menjadi pilihan tepat bagi keluarga yang menginginkan hunian berkualitas dengan akses mudah ke pusat kota Solo.",
     specs: {
       jumlah_unit: "20 Unit (Sisa 8)",
       tipe_unit: "Type 80/65 & 90/65 (2 Lantai)",
