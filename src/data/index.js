@@ -641,11 +641,10 @@ export const LOCATION_POINTS = [
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
 export const CONTACT_INFO = [
-  { icon: "📞", label: "Hotline", value: "+62 21 5000 1234" },
-  { icon: "💬", label: "WhatsApp 1", value: "+62 811 1111 1111" },
-  { icon: "💬", label: "WhatsApp 2", value: "+62 822 2222 2222" },
-  { icon: "💬", label: "WhatsApp 3", value: "+62 833 3333 3333" },
-  { icon: "📧", label: "Email", value: "info@nusagraha.id" },
+  { icon: "📞", label: "Hotline", value: "6287851892312" },
+  { icon: "💬", label: "fuad", value: "6287851892312" },
+  { icon: "💬", label: "miftah", value: "6281703439994" },
+  { icon: "💬", label: "faris", value: "6287888701191" },
   { icon: "🕐", label: "Jam Operasional", value: "Sen–Sab, 08.00–17.00 WIB" },
 ];
 
@@ -656,11 +655,10 @@ export const WA_NUMBERS = [
 ];
 // ─── WA CONTACTS ─────────────────────────────────────────────────────────────
 export const WA_CONTACTS = [
-  { name: "Agen 1", number: "6281234567891" },
-  { name: "Agen 2", number: "6281234567892" },
-  { name: "Agen 3", number: "6281234567893" },
+  { name: "fuad", number: "6287851892312" },
+  { name: "miftah", number: "6281703439994" },
+  { name: "faris", number: "6287888701191" },
 ];
-
 // ─── HERO ─────────────────────────────────────────────────────────────────────
 export const HERO_STATS = [
   { num: "280+", label: "Proyek Selesai" },
