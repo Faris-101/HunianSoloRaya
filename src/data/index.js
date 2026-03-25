@@ -32,7 +32,7 @@ export const PROJECTS = [
     statusLabel: "Ready Stock",
     units: "7 Unit Tersedia",
     type: "Type 80/60, 80/61 & 80/63",
-    price: "Mulai 520 Jt",
+    price: "Mulai 550 Jt",
     span2: true,
     thumbnail: "/assets/ayodya-1.png",
     photos: [
